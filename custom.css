@@ -1,0 +1,4 @@
+/* cap height-based scaling (most common) */
+.logo img, .site-logo img {
+  max-height: 120px !important;   /* try 80–200px */
+}
