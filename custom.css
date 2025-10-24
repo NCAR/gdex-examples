@@ -7,3 +7,12 @@ header a[href="/"] img,
   width: auto !important;
   max-height: none !important;
 }
+
+/* Reduce header constraints if needed */
+.site-header, header {
+  min-height: 0 !important;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
+h1 { letter-spacing: 0.01px !important; }
