@@ -1,18 +1,27 @@
-/* If that still doesn't apply, use a stronger selector: */
+/* --- Make the parent link allow a taller logo --- */
+header a[aria-label="Home"],
+header a[href="/"] {
+  height: 200px !important;     /* match your target */
+  max-height: none !important;
+  display: flex !important;
+  align-items: center !important;
+
+/* --- Force the image to the desired size, defeating Tailwind caps --- */
 header a[aria-label="Home"] img,
 header a[href="/"] img,
 .site-logo img,
-.logo img {
-  height: 150px !important;
+.logo img,
+header img.h-6, header img.h-7, header img.h-8, header img.h-10, header img.h-12,
+header img.max-h-6, header img.max-h-7, header img.max-h-8, header img.max-h-10, header img.max-h-12,
+header img[class*="max-h-"] {
+  height: 200px !important;     /* your dial: 80–200px typical */
+  max-height: none !important;  /* neutralize max-h-* utilities */
   width: auto !important;
+  display: block !important;
+}
+
+/* --- (Optional) If a wrapper sets a cap, remove it --- */
+header .site-logo, header .logo, header .site-header, header {
   max-height: none !important;
+  overflow: visible !important;
 }
-
-/* Reduce header constraints if needed */
-.site-header, header {
-  min-height: 0 !important;
-  padding-top: 0.25rem !important;
-  padding-bottom: 0.25rem !important;
-}
-
-h1 { letter-spacing: 0.01px !important; }
