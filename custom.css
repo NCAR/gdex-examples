@@ -1,4 +1,9 @@
-/* cap height-based scaling (most common) */
-.logo img, .site-logo img {
-  max-height: 200px !important;   /* try 80–200px */
+/* If that still doesn't apply, use a stronger selector: */
+header a[aria-label="Home"] img,
+header a[href="/"] img,
+.site-logo img,
+.logo img {
+  height: 150px !important;
+  width: auto !important;
+  max-height: none !important;
 }
