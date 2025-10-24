@@ -1,27 +1,16 @@
-/* --- Make the parent link allow a taller logo --- */
-header a[aria-label="Home"],
-header a[href="/"] {
-  height: 200px !important;     /* match your target */
-  max-height: none !important;
-  display: flex !important;
-  align-items: center !important;
-
-/* --- Force the image to the desired size, defeating Tailwind caps --- */
-header a[aria-label="Home"] img,
-header a[href="/"] img,
-.site-logo img,
-.logo img,
-header img.h-6, header img.h-7, header img.h-8, header img.h-10, header img.h-12,
-header img.max-h-6, header img.max-h-7, header img.max-h-8, header img.max-h-10, header img.max-h-12,
-header img[class*="max-h-"] {
-  height: 200px !important;     /* your dial: 80–200px typical */
-  max-height: none !important;  /* neutralize max-h-* utilities */
+/* 1) Enlarge the logo image. The theme applies `h-9` directly to <img>. */
+nav a img.h-9 {
+  height: 120px !important;         /* adjust to taste */
   width: auto !important;
-  display: block !important;
 }
 
-/* --- (Optional) If a wrapper sets a cap, remove it --- */
-header .site-logo, header .logo, header .site-header, header {
-  max-height: none !important;
-  overflow: visible !important;
+/* 2) Give the header bar enough room (the theme sets h-[60px] on the sticky header) */
+body > div.sticky.top-0 {
+  height: 140px !important;         /* slightly taller than the logo */
 }
+
+/* 3) Vertically center things after the taller header (optional nicety) */
+body > div.sticky.top-0 nav {
+  align-items: center !important;
+}
+
