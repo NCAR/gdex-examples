@@ -28,4 +28,4 @@ site:
   options:
   #   favicon: favicon.ico
     logo: gdex_logo.png
-    style: _static/custom.css
+    style: ./custom.css
