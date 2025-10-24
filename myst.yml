@@ -25,6 +25,6 @@ project:
     
 site:
   template: book-theme
-   options:
+  options:
   #   favicon: favicon.ico
-     logo: gdex_logo.png
+    logo: gdex_logo.png
