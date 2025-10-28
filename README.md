@@ -18,4 +18,3 @@ We welcome contributions from anyone who has an NCAR HPC account (Casper/Derecho
 
 ## Support
 Issues: Please report bugs and feature requests via GitHub Issues
-Contact: @hrhampapura 
