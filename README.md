@@ -1,7 +1,7 @@
 # gdex-examples
 
 ## About
-Geoscientific workflow examples that ingest data from NCAR's Geoscience Data Exchange (GDEX) and use NCAR's HPC resource Casper for computation. This repo uses Jupyter Book 2 infrasturcture to publish these example notebooks as a website.
+Geoscientific workflow examples that ingest data from NCAR's Geoscience Data Exchange (GDEX) and use NCAR's HPC resource Casper for computation. This repo uses Jupyter Book 2 infrastructure to publish these example notebooks as a website.
 
 ## Example Workflows
 1) Access CESM2 LENS data from GDEX [compute](notebooks/cesm_gmst_ncar.ipynb) GMST anomaly and plot.
