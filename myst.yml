@@ -10,7 +10,7 @@ project:
     - NCAR Data Commons
     - GDEX
   authors:
-    - Harsha R. Hampapura
+    - Harsha R. Hampapura, Chia-Wei Hsu
   github: https://github.com/NCAR/gdex-examples
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
   toc:
@@ -38,6 +38,7 @@ project:
     - title: Data Fusion
       children:
         - file: docs/data_fusion.md
+        - file: notebooks/jra3q.ipynb
 
 site:
   template: book-theme
