@@ -1,60 +1,154 @@
 ---
-title: Introduction
-date: 2025-11-18
+title: Reanalysis
+date: 2025-12-05
+author: Chia-Wei Hsu
 ---
 
-# Introduction
 
-Welcome to the **GDEX Examples** documentation! This repository provides example notebooks and scripts that demonstrate how to access data from NCAR's GDEX for cool geoscience applications and visualizations.
+## Overview
 
-:::{warning} Important Notice
-This jupyter book is under active development and is intended primarily for use by users who have access to NCAR's HPC resources. In all the examples, we assume that you have access to NCAR's jupyterhub. If you are an external user trying to stream data from NCAR's GDEX into your workflows, please see **OSDF users**: [osdf_examples](https://ncar.github.io/osdf_examples/) 
-::: 
+Reanalysis products are comprehensive datasets that combine historical observations with models simulation to create a consistent, spatially and temporally complete representation of the Earth's past climate and weather. They are one of the most valuable resources in Earth system science for understanding climate variability, trends, and dynamics.
 
-## How is the repository organized?
+## Reanalysis vs. Analysis vs. Simulations vs. Observations
 
-While intake-ESM was originally designed for Earth System Model output, we extend its capabilities to support a broader range of Earth science data including:
+Understanding the differences between these fundamental data types is crucial for Earth system science research.
 
-- **Observations** (satellite, in-situ measurements)
-- **Reanalysis datasets** (ERA5, JRA-3Q, etc.)
-- **Model output** (CESM, CMIP, etc.)
-- **Other Earth science datasets**
+:::{important} Reanalysis vs. Analysis 👈
+:class: dropdown
+**Analysis** refers to the real-time, operational data assimilation product produced by weather forecasting centers:
+- Uses the **current** version of the forecast model and assimilation system
+- The model and assimilation methods **change over time** as improvements are made
+- Optimized for short-term weather forecasting
+- Creates discontinuities when the system is upgraded
 
-## Key Features
+**Reanalysis** retrospectively processes historical observations:
+- Uses a **fixed** model and assimilation system for the entire time period
+- Ensures temporal **consistency** and homogeneity
+- Not updated in real-time; produced in multi-year projects
+- Better suited for climate studies and long-term trend analysis
+- More computationally expensive due to reprocessing decades of data
 
-### 🛠️ Custom Catalog Generation
-Our primary tool `generator/create_catalog.py` creates intake-ESM catalogs for any dataset directory with flexible configuration options for different data formats and structures.
+**Key Distinction**: Analysis prioritizes current forecast skill; reanalysis prioritizes long-term consistency.
+:::
 
-### 🌐 Multiple Access Methods
-Generated catalogs support three access patterns :
-- **POSIX**: Direct filesystem access for NCAR HPC users
-- **HTTPS**: Web-based access for remote users
-- **OSDF**: Distributed access through Open Science Data Federation
+:::{important} Reanalysis vs. Model Simulations 👈
+:class: dropdown
+**Model Simulations** (also called free-running simulations or climate projections):
+- Run forward in time without observational constraints
+- Initial conditions may come from observations, but the model evolves freely
+- Used for future climate projections and sensitivity experiments
+- Can drift from observed climate due to model biases
+- Examples: CMIP6 models, CESM simulations
 
-### 📊 Broad Dataset Support
-Compatible with diverse data formats including NetCDF, Zarr, and Kerchunk reference files, following vocabulary conventions used by major data providers (DKRZ, Copernicus, NASA, NOAA).
+**Reanalysis**:
+- **Continuously constrained** by observations through data assimilation
+- Cannot drift far from observed atmospheric state
+- Represents the "best estimate" of what actually happened
+- Limited to historical periods where observations exist
+- Blends model physics with observational evidence
 
-## Quick Start
+**Key Distinction**: Simulations show what the model thinks should happen; reanalysis shows what actually happened (constrained by observations).
+:::
 
-Generate a basic catalog:
-```bash
-python generator/create_catalog.py /path/to/data \
-    --out /output/directory \
-    --catalog_name my_catalog \
-    --description "My dataset catalog"
-```
 
-For comprehensive usage examples:
-- **NCAR HPC users**: [gdex-examples](https://ncar.github.io/gdex-examples/)
-- **OSDF users**: [osdf_examples](https://ncar.github.io/osdf_examples/)
+:::{important} Reanalysis vs. Observations 👈
+:class: dropdown
+**Direct Observations** (in-situ and remote sensing):
+- Actual measurements from instruments
+- **Highest accuracy** at measurement location and time
+- Spatially and temporally **incomplete** (gaps between stations, satellite swaths)
+- Different instruments have different biases and uncertainties
+- No information about unobserved variables or locations
+- Examples: Weather station data, satellite retrievals, radiosonde profiles
 
-## Repository Structure
+**Reanalysis**:
+- **Gridded, gap-filled** product combining observations with model physics
+- Provides estimates even where/when no observations exist
+- Spatially and temporally **complete**
+- Includes hundreds of variables, many not directly observed
+- **Less accurate** than direct observations at observed locations
+- Smooths out small-scale features
+- Subject to both observational and model uncertainties
 
-- **`generator/`** - Core catalog generation tools
-- **`notebooks/`** - Example Jupyter notebooks demonstrating usage 
-- **`examples/`** - Python script examples for generating dataset catalog
-- **`test/`** - Test scripts and validation tools
+**Key Distinction**: Observations provide ground truth but are incomplete; reanalysis provides complete coverage but is less accurate than direct observations.
+:::
 
-## Content
 
-This documentation provides:
+
+## How Reanalysis Works
+
+### Data Assimilation Process
+
+Reanalysis uses a process called **data assimilation** to blend:
+
+1. **Observational Data**: Including satellite measurements, weather stations, radiosondes (weather balloons), ship and buoy observations, and aircraft reports
+2. **Numerical Models**: Physics-based models that simulate atmospheric, oceanic, and land surface processes
+
+The data assimilation system statistically combines these elements, weighing observations and model predictions based on their respective uncertainties to produce the "best estimate" of the atmospheric state at any given time.
+
+### Key Characteristics
+
+- **Temporal Consistency**: Uses a fixed, modern assimilation system and model throughout the entire reanalysis period.
+- **Spatial Completeness**: Fills gaps where observations are sparse or unavailable using model physics
+- **Regular Grid**: Produces data on uniform spatial and temporal grids, making it easier to analyze
+- **Multiple Variables**: Provides hundreds of atmospheric, oceanic, and land variables that are physically consistent with each other
+
+## Types of Reanalysis
+
+### Atmospheric Reanalysis
+- **ERA5** (ECMWF): Currently the most widely used, covering 1940-present
+- **JRA-3Q** (JMA): Japanese reanalysis with high-quality precipitation estimates
+
+### Ocean Reanalysis
+- **ORAS5**: Ocean reanalysis system
+
+### Coupled Reanalysis
+- **CERA-20C**: 20th century coupled reanalysis
+
+## Applications in Earth System Science
+
+Reanalysis products are used for:
+
+1. **Climate Monitoring**: Tracking long-term temperature, precipitation, and circulation patterns
+2. **Extreme Event Analysis**: Studying hurricanes, droughts, heat waves, and other extreme weather
+3. **Model Validation**: Evaluating climate and weather models against a consistent reference
+4. **Forcing Data**: Driving regional models, hydrological models, and impact assessments
+5. **Process Studies**: Understanding physical mechanisms and teleconnections
+6. **Trend Analysis**: Identifying climate change signals and natural variability
+7. **Deep Learning/Machine Learning**: Training and validating AI-based weather and climate models
+
+
+## Limitations and Considerations
+
+### Observational Network Changes
+- Early periods (pre-satellite era) have fewer observations and higher uncertainty
+- Introduction of new satellite systems can create discontinuities
+
+### Model Biases
+- The underlying numerical model has systematic biases that affect the reanalysis
+- Variables directly constrained by observations (temperature, wind) are more reliable than derived quantities (precipitation, evaporation)
+
+### Spurious Trends
+- Some trends may be artifacts of changing observational systems rather than real climate signals
+- Multiple reanalysis products should be compared for robust conclusions
+
+### Resolution Limitations
+- Even high-resolution reanalysis cannot resolve all small-scale features
+- Convective processes and orographic effects may be inadequately represented
+
+## Best Practices
+
+When using reanalysis data:
+
+1. **Choose the Right Product**: Consider temporal coverage, spatial resolution, and which variables are best represented
+2. **Validate Carefully**: Compare with independent observations when possible
+3. **Use Multiple Products**: Cross-validate findings across different reanalysis systems
+4. **Understand Uncertainty**: Be aware of which variables are observation-constrained vs. model-derived
+5. **Check Documentation**: Review known issues and dataset updates from producing centers
+
+## Resources
+
+Major reanalysis centers provide extensive documentation:
+- [ECMWF ERA5 Documentation](https://confluence.ecmwf.int/display/CKB/ERA5)
+- [JMA JRA-3Q Documentation](https://jra.kishou.go.jp/)
+
