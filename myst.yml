@@ -25,7 +25,7 @@ project:
     - title: Analysis
       children: 
         - file: docs/analysis.md
-    - tile: Reanalysis
+    - title: Reanalysis
       children: 
         - file: docs/reanalysis.md
         - file: notebooks/jra3q.ipynb
