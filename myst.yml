@@ -39,9 +39,9 @@ project:
     - title: Data Fusion
       children:
         - file: docs/data_fusion.md
-    - title: Contributing/Open Science
+    - title: Contribution
       children:
-        - file: docs/contributing.md
+        - file: docs/contribution.md
         - file: notebooks/template.ipynb
 
 
