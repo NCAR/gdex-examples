@@ -39,6 +39,7 @@ project:
     - title: Data Fusion
       children:
         - file: docs/data_fusion.md
+        - file: notebooks/era5_precipitation.ipynb
     - title: Contribution
       children:
         - file: docs/contribution.md
