@@ -29,6 +29,7 @@ project:
       children: 
         - file: docs/reanalysis.md
         - file: notebooks/jra3q.ipynb
+        - file: notebooks/era5_precipitation.ipynb
     - title: Simulations 
       children:
         - file: docs/simulations.md
