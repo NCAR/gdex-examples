@@ -40,6 +40,7 @@ project:
     - title: Data Fusion
       children:
         - file: docs/data_fusion.md
+        - file: notebooks/eol_era5.ipynb
     - title: Contribution
       children:
         - file: docs/contribution.md
