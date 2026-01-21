@@ -1,4 +1,7 @@
 ---
+title: Introduction
+date: 2026-1-20
+---
 
 # Introduction
 
