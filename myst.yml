@@ -35,7 +35,6 @@ project:
         - file: docs/simulations.md
         - file: notebooks/cesm_gmst_ncar.ipynb
         - file: notebooks/dart-cam6.ipynb
-        - file: notebooks/eol_test.ipynb
         - file: notebooks/na_cordex.ipynb
     - title: Data Fusion
       children:
