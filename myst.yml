@@ -29,16 +29,17 @@ project:
       children: 
         - file: docs/reanalysis.md
         - file: notebooks/jra3q.ipynb
+        - file: notebooks/era5_precipitation.ipynb
     - title: Simulations 
       children:
         - file: docs/simulations.md
         - file: notebooks/cesm_gmst_ncar.ipynb
         - file: notebooks/dart-cam6.ipynb
-        - file: notebooks/eol_test.ipynb
         - file: notebooks/na_cordex.ipynb
     - title: Data Fusion
       children:
         - file: docs/data_fusion.md
+        - file: notebooks/eol_era5.ipynb
     - title: Contribution
       children:
         - file: docs/contribution.md
