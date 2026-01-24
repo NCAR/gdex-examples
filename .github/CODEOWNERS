@@ -1,0 +1,11 @@
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+
+* @hrhampapura
+
+
+# New file or folder specific rules can be added below
+
+/docs/contribution.md @chiaweh2
+/docs/reanalysis.md @chiaweh2
+/notebooks/jra3q.ipynb @chiaweh2
