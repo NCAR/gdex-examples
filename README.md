@@ -8,13 +8,10 @@ Geoscientific workflow examples that ingest data from NCAR's Geoscience Data Exc
 2) Access NA-CORDEX data from NCAR's GDEX and make some diagnostic [plots](notebooks/na_cordex.ipynb)
 3) Use DART reanalysis data to make [diagnostic plots](notebooks/dart-cam6.ipynb)
 4) Read EOL profiler data from GDEX and [compare](notebooks/eol_era5.ipynb) with ERA5 reanalysis
+5) Access JRA-3Q reanalysis data from GDEX and perform [analysis](notebooks/jra3q.ipynb)
 
 ## How to contribute 
-We welcome contributions from anyone who has an NCAR HPC account (Casper/Derecho access) and uses GDEX data! Please follow these steps:
-1. Fork the repository
-2. Create a feature branch (git checkout -b example/my-amazing-example)
-3. Add your notebook/ workflow
-4. Submit a pull request with a brief explanation of the changes
+[our contribution guide](docs/contribution.md) for more details.
 
 ## Support
 Issues: Please report bugs and feature requests via GitHub Issues
