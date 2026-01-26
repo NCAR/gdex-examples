@@ -11,7 +11,7 @@ Geoscientific workflow examples that ingest data from NCAR's Geoscience Data Exc
 5) Access JRA-3Q reanalysis data from GDEX and perform [analysis](notebooks/jra3q.ipynb)
 
 ## How to contribute 
-[our contribution guide](docs/contribution.md) for more details.
+See [our contribution guide](docs/contribution.md) for more details.
 
 ## Support
 Issues: Please report bugs and feature requests via GitHub Issues
