@@ -8,7 +8,7 @@ date: 2026-1-20
 Welcome to the **GDEX Examples** documentation! This repository provides example notebooks and scripts that demonstrate how to access data from NCAR's GDEX for cool geoscience applications and visualizations.
 
 :::{warning} Important Notice
-This jupyter book is under active development and is intended primarily for use by users who have access to NCAR's HPC resources (**NCAR HPC users**). In all the examples, we assume that you have access to NCAR's jupyterhub. If you are an external user trying to stream data from NCAR's GDEX into your workflows, please see : [osdf_examples](https://ncar.github.io/osdf_examples/) (**OSDF users**)
+This jupyter book is under active development and is intended primarily for use by users who have access to NCAR's HPC resources (**NCAR HPC users**). In all the examples, we assume that you have access to NCAR's jupyterhub. If you are an external user trying to stream data from NCAR's GDEX into your workflows, please see : [osdf_examples](https://ncar.github.io/osdf-examples/) (**OSDF users**)
 ::: 
 
 ## How is the repository organized?
