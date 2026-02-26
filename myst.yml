@@ -22,6 +22,7 @@ project:
     - title: Observations
       children: 
         - file: docs/observations.md
+        - file: notebooks/hadisst_elnino.ipynb
     - title: Analysis
       children: 
         - file: docs/analysis.md
