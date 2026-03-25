@@ -23,6 +23,7 @@ project:
       children: 
         - file: docs/observations.md
         - file: notebooks/hadisst_elnino.ipynb
+        - file: notebooks/eol_radar_precip.ipynb
     - title: Analysis
       children: 
         - file: docs/analysis.md
@@ -41,6 +42,9 @@ project:
       children:
         - file: docs/data_fusion.md
         - file: notebooks/eol_era5.ipynb
+    - title: Background & Concepts
+      children:
+        - file: docs/zarr_format.md
     - title: Contribution
       children:
         - file: docs/contribution.md
