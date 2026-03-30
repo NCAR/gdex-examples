@@ -102,7 +102,7 @@ Zarr is not always the right choice. Here is a practical guide:
 
 | Situation                                          | Recommendation |
 |---                                                 |---|
-| Data lives in cloud object storage (S3, GCS, OSDF) | **Use Zarr** — it was made for this |
+| Data lives in cloud object storage (S3, GCS)       | **Use Zarr** — it was made for this |
 | You regularly read small subsets of large arrays   | **Use Zarr** — chunk-level reads save time |
 | You run parallel Dask workflows                    | **Use Zarr** — independent chunks = no write locks |
 | Data is shared as a single portable file           | Consider NetCDF4 — easier to email or `scp` |
