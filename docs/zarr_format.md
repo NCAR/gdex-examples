@@ -1,6 +1,7 @@
 ---
 title: Zarr Data Format
-date: 2026-3-10
+author: Chia-Wei Hsu
+date: 2026-3-31
 ---
 
 # What is Zarr and Why Should You Care?
