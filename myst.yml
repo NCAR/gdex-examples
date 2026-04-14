@@ -43,6 +43,7 @@ project:
       children:
         - file: docs/data_fusion.md
         - file: notebooks/eol_era5.ipynb
+        - file: notebooks/jja_heatindex.ipynb
     - title: Contribution
       children:
         - file: docs/contribution.md
