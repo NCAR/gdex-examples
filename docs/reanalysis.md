@@ -1,5 +1,5 @@
 ---
-title: Reanalysis
+title: Reanalysis Intro
 date: 2025-12-05
 author: Chia-Wei Hsu
 ---
@@ -150,5 +150,5 @@ When using reanalysis data:
 
 Major reanalysis centers provide extensive documentation:
 - [ECMWF ERA5 Documentation](https://confluence.ecmwf.int/display/CKB/ERA5)
-- [JMA JRA-3Q Documentation](https://jra.kishou.go.jp/)
+- [JMA JRA-3Q Documentation](https://www.data.jma.go.jp/jra/html/JRA-3Q/index_en.html)
 
