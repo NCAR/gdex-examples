@@ -44,6 +44,7 @@ project:
       children:
         - file: docs/data_fusion.md
         - file: notebooks/eol_era5.ipynb
+        - file: notebooks/jja_heatindex.ipynb
     - title: Background & Concepts
       children:
         - file: docs/zarr_format.md
