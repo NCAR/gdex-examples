@@ -23,6 +23,7 @@ project:
       children: 
         - file: docs/observations.md
         - file: notebooks/hadisst_elnino.ipynb
+        - file: notebooks/eol_radar_precip.ipynb
     - title: Analysis
       children: 
         - file: docs/analysis.md
@@ -31,19 +32,22 @@ project:
         - file: docs/reanalysis.md
         - file: notebooks/jra3q.ipynb
         - file: notebooks/era5_precipitation.ipynb
+        - file: notebooks/dart-cam6.ipynb
     - title: Simulations 
       children:
         - file: docs/simulations.md
         - file: notebooks/cesm_gmst_ncar.ipynb
         - file: notebooks/cesm_geocat.ipynb
         - file: notebooks/cesm_oceanheat.ipynb
-        - file: notebooks/dart-cam6.ipynb
         - file: notebooks/na_cordex.ipynb
     - title: Data Fusion
       children:
         - file: docs/data_fusion.md
         - file: notebooks/eol_era5.ipynb
         - file: notebooks/jja_heatindex.ipynb
+    - title: Background & Concepts
+      children:
+        - file: docs/zarr_format.md
     - title: Contribution
       children:
         - file: docs/contribution.md
@@ -53,6 +57,6 @@ project:
 site:
   template: book-theme
   options:
-  #   favicon: favicon.ico
+    favicon: favicon.ico
     logo: gdex_logo.png
     style: ./custom.css
