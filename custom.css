@@ -1,20 +1,8 @@
-/* 1) Enlarge the logo image. The theme applies `h-9` directly to <img>. */
-nav a img.h-9 {
-  height: 120px !important;         /* adjust to taste */
-  width: auto !important;
-}
+/* Enlarge the GDEX logo and header bar. The MyST book-theme applies the
+   Tailwind utilities `h-9` to the logo <img> and `h-[60px]` to the sticky
+   header — these rules override both, driven from a single CSS variable. */
 
-/* 2) Give the header bar enough room (the theme sets h-[60px] on the sticky header) */
-body > div.sticky.top-0 {
-  height: 140px !important;         /* slightly taller than the logo */
-}
-
-/* 3) Vertically center things after the taller header (optional nicety) */
-body > div.sticky.top-0 nav {
-  align-items: center !important;
-}
-/* 0) Single source of truth for the header height */
-:root { --header-h: 120px; }   /* set this to your desired logo/header size */
+:root { --header-h: 120px; }
 
 /* 1) Make the top sticky header match the variable */
 body > div.sticky.top-0 {
@@ -33,12 +21,12 @@ div.fixed.xl\:article-grid { top: var(--header-h) !important; }
 /* Right sticky block that had inline style top:60px */
 .lg\:sticky { top: var(--header-h) !important; }
 
-/* 4) (If needed) keep nav contents centered vertically */
+/* 4) Keep nav contents centered vertically in the taller bar */
 body > div.sticky.top-0 nav { align-items: center !important; }
 
-/* 5) Your logo size rule (keep whatever you settled on) */
+/* 5) Logo size — a little smaller than the bar height */
 nav a img.h-9 {
-  height: calc(var(--header-h) - 20px) !important; /* a little smaller than bar */
+  height: calc(var(--header-h) - 20px) !important;
   width: auto !important;
   max-height: none !important;
 }
