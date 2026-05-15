@@ -5,28 +5,31 @@ date: 2026-1-20
 
 # Introduction
 
-Welcome to the **GDEX Examples** documentation! This repository provides example notebooks and scripts that demonstrate how to access data from NCAR's GDEX for cool geoscience applications and visualizations.
+Welcome to **NCAR GDEX Examples** — a collection of Jupyter notebooks that demonstrate geoscientific workflows using data from NCAR's [Geoscience Data Exchange (GDEX)](https://gdex.ucar.edu/). Each example shows how to access a specific GDEX dataset and use it for analysis or visualization, with computations performed on NCAR's HPC resources (Casper / Derecho).
 
 :::{warning} Important Notice
-This jupyter book is under active development and is intended primarily for use by users who have access to NCAR's HPC resources (**NCAR HPC users**). In all the examples, we assume that you have access to NCAR's jupyterhub. If you are an external user trying to stream data from NCAR's GDEX into your workflows, please see : [osdf_examples](https://ncar.github.io/osdf-examples/) (**OSDF users**)
-::: 
+This jupyter book is under active development and is intended primarily for users with access to NCAR's HPC resources (**NCAR HPC users**). All examples assume that you have access to NCAR's JupyterHub. If you are an external user trying to stream GDEX data into your own workflows, please see [osdf-examples](https://ncar.github.io/osdf-examples/) (**OSDF users**).
+:::
 
-## How is the repository organized?
+## How is the site organized?
 
-This repository is organized by into various sections based on the type of dataset used:
+Examples are grouped into sections by data type:
 
-- **Observations** (satellite, in-situ measurements)
-- **Analysis** (NCEP GFS analyses)
-- **Reanalysis** (ERA5, JRA-3Q, etc.)
-- **Model output/Simulations** (CESM, CMIP, etc.)
-- **Data Fusion** (Combination of two or more datasets)
-- **Contribution** (A guide on contributions)
+- **Observations** — satellite, in-situ measurements
+- **Analysis** — NCEP GFS analyses
+- **Reanalysis** — ERA5, JRA-3Q, etc.
+- **Simulations** — model output (CESM, CMIP, etc.)
+- **Data Fusion** — combinations of two or more datasets
+- **Background & Concepts** — supporting material (e.g., the Zarr format)
+- **Contribution** — guide for adding new examples
 
 ### 🌐 Multiple Access Methods
-Some of these notebooks use intake/intake-ESM catalogs that support multiple access patterns :
-- **POSIX**: Direct filesystem access for NCAR HPC users
-- **HTTPS**: Web-based access for remote users
 
-## Repository Structure
-- **`docs/`** - Introductory markdown files for each section
-- **`examples/`** - Python script examples for generating dataset catalog
+Some notebooks use intake / intake-ESM catalogs that support more than one access pattern:
+
+- **POSIX** — direct filesystem access for NCAR HPC users
+- **HTTPS** — web-based access for remote users
+
+## Repository
+
+Source code lives at <https://github.com/NCAR/gdex-examples>. See the [contribution guide](contribution.md) to add a new example.
