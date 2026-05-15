@@ -29,7 +29,7 @@ project:
         - file: docs/reanalysis.md
         - file: notebooks/jra3q.ipynb
         - file: notebooks/era5_precipitation.ipynb
-        - file: notebooks/dart-cam6.ipynb
+        - file: notebooks/dart_cam6.ipynb
     - title: Simulations 
       children:
         - file: docs/simulations.md
