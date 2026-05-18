@@ -56,5 +56,4 @@ dependencies:
 
   - pip
   - pip:
-      - pelicanfs
       - heatindex
