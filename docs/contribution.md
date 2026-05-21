@@ -136,7 +136,7 @@ Please be respectful and constructive in all interactions. We aim to foster an i
 
 ## License
 
-By contributing to this repository, you agree that your contributions will be licensed under the [Creative Commons Attribution 4.0 International License (CC-BY-4.0)](../LICENSE), the license under which this project is published.
+By contributing to this repository, you agree that your contributions will be dual-licensed under the same terms as this project: **content** (prose, figures, notebook narrative) under the [Creative Commons Attribution 4.0 International License (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/), and **code** (Python in notebooks, helper scripts, configuration) under the [MIT License](../LICENSE).
 
 ---
 
