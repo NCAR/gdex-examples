@@ -1,0 +1,59 @@
+# Conda environment for running the gdex-examples notebooks locally.
+#
+# Lists direct dependencies only — versions resolve to a compatible set at
+# install time. For the exact pinned environment used to render the site
+# on NCAR Casper, see `environment-lock.txt` (pip freeze output).
+#
+# Usage:
+#   conda env create -f environment.yml
+#   conda activate gdex-examples
+
+name: gdex-examples
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+
+  # Core scientific Python
+  - numpy
+  - pandas
+  - scipy
+  - xarray
+  - matplotlib-base
+  - seaborn
+
+  # Geospatial / climate
+  - cartopy
+  - nc-time-axis
+  - cf_units
+  - geocat-comp
+  - xradar
+  - cmweather
+
+  # Data access and catalogs
+  - intake
+  - intake-esm
+  - zarr
+  - fsspec
+  - aiohttp
+  - netcdf4
+  - h5netcdf
+  - requests
+
+  # Parallel compute
+  - dask
+  - distributed
+  - dask-jobqueue   # for NCAR PBSCluster on Casper / Derecho
+  - dask-gateway    # for cloud / JupyterHub gateway setups
+
+  # Misc
+  - tqdm
+
+  # Jupyter
+  - jupyterlab
+  - ipykernel
+  - ipywidgets
+
+  - pip
+  - pip:
+      - heatindex

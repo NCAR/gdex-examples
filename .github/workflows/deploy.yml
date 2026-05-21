@@ -39,6 +39,8 @@ jobs:
         run: npm install -g jupyter-book
       - name: Build HTML Assets
         run: jupyter-book build --html
+      - name: Build PageFind search index
+        run: npx -y pagefind --site _build/html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
