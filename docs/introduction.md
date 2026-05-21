@@ -5,7 +5,7 @@ date: 2026-1-20
 
 # Introduction
 
-[![DOI](https://zenodo.org/badge/1041581979.svg)](https://zenodo.org/badge/latestdoi/1041581979)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20330479.svg)](https://doi.org/10.5281/zenodo.20330479)
 
 Welcome to **NCAR GDEX Examples** — a collection of Jupyter notebooks that demonstrate geoscientific workflows using data from NCAR's [Geoscience Data Exchange (GDEX)](https://gdex.ucar.edu/). Each example shows how to access a specific GDEX dataset and use it for analysis or visualization, with computations performed on NCAR's HPC resources (Casper / Derecho).
 
