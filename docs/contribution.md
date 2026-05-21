@@ -136,7 +136,7 @@ Please be respectful and constructive in all interactions. We aim to foster an i
 
 ## License
 
-By contributing to this repository, you agree that your contributions will be licensed under the same license as the project.
+By contributing to this repository, you agree that your contributions will be licensed under the [Creative Commons Attribution 4.0 International License (CC-BY-4.0)](../LICENSE), the license under which this project is published.
 
 ---
 
