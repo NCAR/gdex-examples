@@ -1,0 +1,45 @@
+# Citation File Format v1.2.0 — https://citation-file-format.github.io/
+cff-version: 1.2.0
+message: "If you use these example workflows, please cite this repository using the metadata below."
+type: software
+title: "GDEX Examples: geoscientific workflows using NCAR's Geoscience Data Exchange"
+abstract: >-
+  A collection of Jupyter notebooks demonstrating geoscientific workflows that
+  use data from NCAR's Geoscience Data Exchange (GDEX), with computations
+  performed on NCAR's HPC resources (Casper / Derecho). Covers observational,
+  reanalysis, simulation, and data-fusion examples.
+version: v2026.05
+date-released: 2026-05-21
+repository-code: "https://github.com/NCAR/gdex-examples"
+url: "https://ncar.github.io/gdex-examples/"
+license: CC-BY-4.0
+keywords:
+  - Jupyter Book
+  - MyST
+  - NCAR
+  - GDEX
+  - geoscience
+  - climate
+  - earth-system-science
+  - reanalysis
+authors:
+  - family-names: Hampapura
+    given-names: "Harsha R."
+    affiliation: "NSF National Center for Atmospheric Research"
+    orcid: "https://orcid.org/0000-0002-2449-9032"
+  - family-names: Hsu
+    given-names: "Chia-Wei"
+    affiliation: "NSF National Center for Atmospheric Research"
+    orcid: "https://orcid.org/0000-0002-4838-0140"
+  - family-names: Sears
+    given-names: Mya
+    affiliation: "NSF National Center for Atmospheric Research"
+    orcid: "https://orcid.org/0009-0003-5870-7498"
+  - family-names: Cha
+    given-names: "Ting-Yu"
+    affiliation: "NSF National Center for Atmospheric Research"
+    orcid: "https://orcid.org/0000-0002-6292-8483"
+  - family-names: "del Moral Méndez"
+    given-names: Anna
+    affiliation: "NSF National Center for Atmospheric Research, Earth Observing Laboratory"
+    orcid: "https://orcid.org/0000-0002-5015-840X"

@@ -10,7 +10,21 @@ project:
     - NCAR Data Commons
     - GDEX
   authors:
-    - Harsha R. Hampapura, Chia-Wei Hsu
+    - name: Harsha R. Hampapura
+      affiliation: NSF National Center for Atmospheric Research
+      orcid: 0000-0002-2449-9032
+    - name: Chia-Wei Hsu
+      affiliation: NSF National Center for Atmospheric Research
+      orcid: 0000-0002-4838-0140
+    - name: Mya Sears
+      affiliation: NSF National Center for Atmospheric Research
+      orcid: 0009-0003-5870-7498
+    - name: Ting-Yu Cha
+      affiliation: NSF National Center for Atmospheric Research
+      orcid: 0000-0002-6292-8483
+    - name: Anna del Moral Méndez
+      affiliation: NSF National Center for Atmospheric Research, Earth Observing Laboratory
+      orcid: 0000-0002-5015-840X
   github: https://github.com/NCAR/gdex-examples
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
   toc:

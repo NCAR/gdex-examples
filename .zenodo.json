@@ -1,0 +1,59 @@
+{
+  "upload_type": "software",
+  "title": "GDEX Examples: geoscientific workflows using NCAR's Geoscience Data Exchange",
+  "description": "A collection of Jupyter notebooks demonstrating geoscientific workflows that use data from NCAR's Geoscience Data Exchange (GDEX), with computations performed on NCAR's HPC resources (Casper / Derecho). Covers observational, reanalysis, simulation, and data-fusion examples. Rendered site: https://ncar.github.io/gdex-examples/",
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "Jupyter Book",
+    "MyST",
+    "NCAR",
+    "GDEX",
+    "geoscience",
+    "climate",
+    "earth-system-science",
+    "reanalysis"
+  ],
+  "communities": [
+    { "identifier": "nsfncar" }
+  ],
+  "creators": [
+    {
+      "name": "Hampapura, Harsha R.",
+      "affiliation": "NSF National Center for Atmospheric Research",
+      "orcid": "0000-0002-2449-9032"
+    },
+    {
+      "name": "Hsu, Chia-Wei",
+      "affiliation": "NSF National Center for Atmospheric Research",
+      "orcid": "0000-0002-4838-0140"
+    },
+    {
+      "name": "Sears, Mya",
+      "affiliation": "NSF National Center for Atmospheric Research",
+      "orcid": "0009-0003-5870-7498"
+    },
+    {
+      "name": "Cha, Ting-Yu",
+      "affiliation": "NSF National Center for Atmospheric Research",
+      "orcid": "0000-0002-6292-8483"
+    },
+    {
+      "name": "del Moral Méndez, Anna",
+      "affiliation": "NSF National Center for Atmospheric Research, Earth Observing Laboratory",
+      "orcid": "0000-0002-5015-840X"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://ncar.github.io/gdex-examples/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://gdex.ucar.edu/",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

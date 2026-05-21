@@ -2,6 +2,7 @@
 
 [![Jupyter Book](https://img.shields.io/badge/jupyter--book-live-blue?logo=jupyter)](https://ncar.github.io/gdex-examples/)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue?logo=python)](https://www.python.org/)
+[![DOI](https://zenodo.org/badge/1041581979.svg)](https://zenodo.org/badge/latestdoi/1041581979)
 
 A collection of Jupyter notebooks demonstrating geoscientific workflows that
 use data from NCAR's [Geoscience Data Exchange (GDEX)](https://gdex.ucar.edu/),
