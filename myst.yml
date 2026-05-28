@@ -29,6 +29,7 @@ project:
         - file: docs/observations.md
         - file: notebooks/hadisst_elnino.ipynb
         - file: notebooks/eol_radar_precip.ipynb
+        - file: notebooks/raf_socrates.ipynb
     - title: Analysis
       children:
         - file: docs/analysis.md
