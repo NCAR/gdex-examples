@@ -47,6 +47,7 @@ project:
         - file: notebooks/cesm_oceanheat.ipynb
         - file: notebooks/na_cordex.ipynb
         - file: notebooks/conus404.ipynb
+        - file: notebooks/mesaclip_regrid_sst.ipynb
     - title: Data Fusion
       children:
         - file: docs/data_fusion.md
