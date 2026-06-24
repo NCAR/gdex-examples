@@ -48,6 +48,7 @@ project:
         - file: notebooks/na_cordex.ipynb
         - file: notebooks/conus404.ipynb
         - file: notebooks/saag.ipynb
+        - file: notebooks/maag.ipynb
         - file: notebooks/mesaclip_regrid_sst.ipynb
     - title: Data Fusion
       children:
