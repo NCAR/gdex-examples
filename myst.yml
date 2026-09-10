@@ -51,6 +51,7 @@ project:
         - file: notebooks/saag.ipynb
         - file: notebooks/maag.ipynb
         - file: notebooks/mesaclip_regrid_sst.ipynb
+        - file: notebooks/mesaclip_sea_height.ipynb
     - title: Data Fusion
       children:
         - file: docs/data_fusion.md

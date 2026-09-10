@@ -12,7 +12,7 @@ name: gdex-examples
 channels:
   - conda-forge
 dependencies:
-  - python>=3.10
+  - python=3.12        # pin a version: Binder/repo2docker falls back to 3.10 for a range, which breaks the solve
 
   # Core scientific Python
   - numpy
@@ -25,14 +25,17 @@ dependencies:
   # Geospatial / climate
   - cartopy
   - nc-time-axis
-  - cf_units
+  - cf-units          # conda-forge name is hyphenated; "cf_units" only has ≤py3.7 builds and breaks the solve
   - geocat-comp
   - xradar
   - cmweather
+  - rioxarray         # mesaclip_regrid_sst
+  - folium            # mesaclip_regrid_sst, raf_socrates
 
   # Data access and catalogs
   - intake
   - intake-esm
+  - kerchunk          # engine="kerchunk" — CONUS404, SAAG, MAAG, MESACLIP, heatindex
   - zarr
   - fsspec
   - aiohttp
@@ -48,6 +51,9 @@ dependencies:
 
   # Misc
   - tqdm
+  - psutil            # mesaclip_regrid_sst (memory reporting)
+  - statsmodels       # urban_heat_minicubes
+  - pillow            # urban_heat_minicubes (import PIL)
 
   # Jupyter
   - jupyterlab
@@ -57,3 +63,4 @@ dependencies:
   - pip
   - pip:
       - heatindex
+      - pelicanfs     # cmip6_gmst (OSDF access)
