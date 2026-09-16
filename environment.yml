@@ -25,12 +25,14 @@ dependencies:
   # Geospatial / climate
   - cartopy
   - nc-time-axis
+  - cftime            # mesaclip_sea_height, imerg (cftime calendars)
   - cf-units          # conda-forge name is hyphenated; "cf_units" only has ≤py3.7 builds and breaks the solve
   - geocat-comp
   - xradar
   - cmweather
   - rioxarray         # mesaclip_regrid_sst
   - folium            # mesaclip_regrid_sst, raf_socrates
+  - branca            # folium dependency, imported directly in mesaclip_regrid_sst
 
   # Data access and catalogs
   - intake
