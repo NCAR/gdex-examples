@@ -7,10 +7,10 @@ date: 2026-1-20
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20330479.svg)](https://doi.org/10.5281/zenodo.20330479)
 
-Welcome to **NCAR GDEX Examples** — a collection of Jupyter notebooks that demonstrate geoscientific workflows using data from NCAR's [Geoscience Data Exchange (GDEX)](https://gdex.ucar.edu/). Each example shows how to access a specific GDEX dataset and use it for analysis or visualization, with computations performed on NCAR's HPC resources (Casper / Derecho).
+Welcome to **NCAR GDEX Examples** — a collection of Jupyter notebooks that demonstrate geoscientific workflows using data from NCAR's [Geoscience Data Exchange (GDEX)](https://gdex.ucar.edu/). Each example shows how to access a specific GDEX dataset and use it for analysis or visualization.
 
-:::{warning} Important Notice
-This jupyter book is under active development and is intended primarily for users with access to NCAR's HPC resources (**NCAR HPC users**). All examples assume that you have access to NCAR's JupyterHub. If you are an external user trying to stream GDEX data into your own workflows, please see [osdf-examples](https://ncar.github.io/osdf-examples/) (**OSDF users**).
+:::{note} Run these anywhere
+Each notebook **auto-detects its environment**: it reads data over the fast POSIX mount where `/gdex/data` is available (NCAR HPC, CIRRUS BinderHub) and otherwise streams it over the [Open Science Data Federation (OSDF)](https://osg-htc.org/services/osdf.html). The examples run on NCAR JupyterHub, on CIRRUS BinderHub, or on your own laptop with no code changes.
 :::
 
 ## How is the site organized?
@@ -25,12 +25,14 @@ Examples are grouped into sections by data type:
 - **Background & Concepts** — supporting material (e.g., the Zarr format)
 - **Contribution** — guide for adding new examples
 
-### 🌐 Multiple Access Methods
+### 🌐 Runs on HPC, Binder, or your laptop
 
-Some notebooks use intake / intake-ESM catalogs that support more than one access pattern:
+Every notebook auto-detects where it is running and picks the data path for you:
 
-- **POSIX** — direct filesystem access for NCAR HPC users
-- **HTTPS** — web-based access for remote users
+- **POSIX** — direct filesystem access where `/gdex/data` is mounted (NCAR HPC, CIRRUS BinderHub)
+- **OSDF** — streamed over the Open Science Data Federation when off-cluster (laptops, other hubs)
+
+No edits are needed to move between them.
 
 ## Repository
 

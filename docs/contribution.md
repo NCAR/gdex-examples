@@ -1,6 +1,6 @@
 # Contributing to NCAR GDEX Examples
 
-We welcome contributions from anyone who has an NCAR HPC account (Casper/Derecho access) or simply uses GDEX data! This guide will walk you through the process of contributing your geoscientific workflow examples to the repository.
+We welcome contributions from anyone who uses GDEX data — whether you work on NCAR HPC (Casper/Derecho), on CIRRUS BinderHub, or on your own machine! This guide will walk you through the process of contributing your geoscientific workflow examples to the repository.
 
 ## Contribution Workflow
 
