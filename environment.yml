@@ -49,7 +49,6 @@ dependencies:
   - dask
   - distributed
   - dask-jobqueue   # for NCAR PBSCluster on Casper / Derecho
-  - dask-gateway    # for cloud / JupyterHub gateway setups
 
   # Misc
   - tqdm
