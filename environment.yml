@@ -49,6 +49,7 @@ dependencies:
   - dask
   - distributed
   - dask-jobqueue   # for NCAR PBSCluster on Casper / Derecho
+  - flox            # fast, memory-safe xarray groupby reductions (imerg_daily)
 
   # Misc
   - tqdm
