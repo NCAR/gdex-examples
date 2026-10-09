@@ -29,6 +29,7 @@ project:
         - file: docs/observations.md
         - file: notebooks/hadisst_elnino.ipynb
         - file: notebooks/eol_radar_precip.ipynb
+        - file: notebooks/tutorial_cf1_to_cf2.ipynb
         - file: notebooks/imerg_monthly_itcz.ipynb
         - file: notebooks/imerg_daily.ipynb
         - file: notebooks/raf_socrates.ipynb
