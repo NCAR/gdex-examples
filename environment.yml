@@ -1,8 +1,7 @@
 # Conda environment for running the gdex-examples notebooks locally.
 #
 # Lists direct dependencies only — versions resolve to a compatible set at
-# install time. For the exact pinned environment used to render the site
-# on NCAR Casper, see `environment-lock.txt` (pip freeze output).
+# install time.
 #
 # Usage:
 #   conda env create -f environment.yml
