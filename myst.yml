@@ -32,6 +32,7 @@ project:
         - file: notebooks/tutorial_cf1_to_cf2.ipynb
         - file: notebooks/imerg_monthly_itcz.ipynb
         - file: notebooks/imerg_daily.ipynb
+        - file: notebooks/imerg_halfhourly_diurnal.ipynb
         - file: notebooks/raf_socrates.ipynb
         - file: notebooks/urban_heat_minicubes_analysis.ipynb
     - title: Analysis
