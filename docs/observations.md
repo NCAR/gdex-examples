@@ -22,7 +22,10 @@ This section demonstrates how to access observational datasets hosted on NCAR's 
 
 - **HadISST** — Hadley Centre Sea Ice and Sea Surface Temperature dataset; monthly 1°×1° SST and sea ice, 1870–present. Used here for El Niño / ENSO analysis.
 - **EOL Radar Precipitation** — NCAR Earth Observing Laboratory precipitation radar observations.
-- **GPM IMERG** — NASA satellite–gauge global precipitation (0.1°, monthly), shown as a long-term climatology map and an animated seasonal cycle of the tropical rain belt.
+- **GPM IMERG** — NASA satellite–gauge global precipitation at 0.1°, at three time resolutions:
+  - *Monthly*: a long-term climatology map and an animated seasonal cycle of the tropical rain belt.
+  - *Daily*: a day-of-year climatology that animates the annual march of the rain belt.
+  - *Half-hourly*: the diurnal cycle of summer rainfall over the contiguous United States.
 - **RAF flight track** — NCAR Research Aviation Facility flight observation for Southern Ocean Clouds Radiation Aerosol Transport Experimental Study (SOCRATES).
 
 ## Where to start
