@@ -1,6 +1,6 @@
 ---
 title: Introduction
-date: 2026-1-20
+date: 2026-01-20
 ---
 
 # Introduction
