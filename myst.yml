@@ -34,6 +34,8 @@ project:
         - file: notebooks/imerg_daily.ipynb
         - file: notebooks/imerg_halfhourly_diurnal.ipynb
         - file: notebooks/raf_socrates.ipynb
+        - file: notebooks/eol_m2hats_prof449.ipynb
+        - file: notebooks/eol_m2hats_prof915.ipynb
         - file: notebooks/urban_heat_minicubes_analysis.ipynb
     - title: Analysis
       children:

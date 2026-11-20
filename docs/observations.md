@@ -27,6 +27,7 @@ This section demonstrates how to access observational datasets hosted on NCAR's 
   - *Daily*: a day-of-year climatology that animates the annual march of the rain belt.
   - *Half-hourly*: the diurnal cycle of summer rainfall over the contiguous United States.
 - **RAF flight track** — NCAR Research Aviation Facility flight observation for Southern Ocean Clouds Radiation Aerosol Transport Experimental Study (SOCRATES).
+- **M2HATS ISS wind profilers** — 449 MHz and 915 MHz radar wind profilers from the NCAR Earth Observing Laboratory's Integrated Sounding System during the 2023 M2HATS campaign, shown as daily time-height curtains of signal-to-noise ratio, vertical velocity, and winds.
 
 ## Where to start
 
